@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Input Form</title>
+</head>
+
+<body>
+    <header>
+        <h1><strong>User Input Form</strong></h1>
+    </header>
+    <main>
+        <h3>Exploring New HTML5 Input Types</h3><br>
+        <form action="/submit" method="POST">
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" placeholder="email@example.com">
+            <br><br>
+            <label for="quantity">Quantity (1-20):</label>
+            <input type="number" name="quantity" min="1" max="20" step="1">
+            <br><br>
+            <label for="date">Date:</label>
+            <input type="date" name="date" min="2024-01-01" max="2025-12-31">
+            <br><br>
+            <label for="rating">Rating:</label>
+            <input type="range" name="rating" min="1" max="5" value="3">
+            <br><br>
+            <label for="color">Color:</label>
+            <input type="color" name="color" value="#00ff1e">
+            <div role="alert" aria-live="assertive"></div>
+            <br><br>
+            <label for="language">Favorite Programming Language:</label>
+            <select id="language" name="language">
+                <option value="">Select Language</option>
+                <option value="python">Python</option>
+                <option value="sql">SQL</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+            <br><br>
+            <label>Expertise Level:</label><br>
+            <input type="radio" name="expertise" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" name="expertise" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" name="expertise" value="advanced">
+            <label for="advanced">Advanced</label>
+            <br><br>
+            <label>Preferred Development Platforms:</label><br>
+            <input type="checkbox" name="platform" value="web">
+            <label for="web">Web</label>
+            <input type="checkbox" name="platform" value="mobile">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" name="platform" value="desktop">
+            <label for="desktop">Desktop</label>
+            <div role="alert" aria-live="assertive"></div>
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+        </form>
+    </main>
+</body>
+
+</html>
